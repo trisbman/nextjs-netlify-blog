@@ -31,7 +31,7 @@ export default function Index({ posts, tags, pagination }: Props) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = listPostContent(1, config.posts_per_page);
+  const posts = listPostContent(1, config.posts_per_page);  
   const tags = listTags();
   const pagination = {
     current: 1,

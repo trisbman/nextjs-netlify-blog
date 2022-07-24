@@ -11,12 +11,16 @@ export default function PostItem({ post }: Props) {
     <Link href={"/posts/" + post.slug}>
       <a>
         <Date date={parseISO(post.date)} />
+        <img src={post.coverImage} />
         <h2>{post.title}</h2>
         <style jsx>
           {`
             a {
               color: #222;
               display: inline-block;
+            }
+            img {
+              width: 100%;
             }
             h2 {
               margin: 0;

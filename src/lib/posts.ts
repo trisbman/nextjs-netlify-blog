@@ -2,12 +2,14 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import yaml from "js-yaml";
+import { DEFAULT_COVER_IMAGE } from "../global";
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
 export type PostContent = {
   readonly date: string;
   readonly title: string;
+  readonly coverImage: string;
   readonly slug: string;
   readonly tags?: string[];
   readonly fullPath: string;
@@ -37,21 +39,25 @@ export function fetchPostContent(): PostContent[] {
       const matterData = matterResult.data as {
         date: string;
         title: string;
+        coverImage: string;
         tags: string[];
         slug: string;
-        fullPath: string,
+        fullPath: string;
       };
       matterData.fullPath = fullPath;
 
       const slug = fileName.replace(/\.mdx$/, "");
 
+      if(!matterData.coverImage) {
+        matterData.coverImage = DEFAULT_COVER_IMAGE
+      }
       // Validate slug string
       if (matterData.slug !== slug) {
         throw new Error(
           "slug field not match with the path of its content source"
         );
-      }
-
+      }      
+      
       return matterData;
     });
   // Sort posts by date

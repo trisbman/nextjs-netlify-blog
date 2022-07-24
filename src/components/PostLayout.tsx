@@ -16,6 +16,7 @@ import { getTag } from "../lib/tags";
 type Props = {
   title: string;
   date: Date;
+  coverImage: string;
   slug: string;
   tags: string[];
   author: string;
@@ -25,6 +26,7 @@ type Props = {
 export default function PostLayout({
   title,
   date,
+  coverImage,
   slug,
   author,
   tags,
@@ -62,6 +64,7 @@ export default function PostLayout({
       <div className={"container"}>
         <article>
           <header>
+            <img src={coverImage} alt={title} />
             <h1>{title}</h1>
             <div className={"metadata"}>
               <div>

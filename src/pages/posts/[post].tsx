@@ -12,10 +12,12 @@ import PostLayout from "../../components/PostLayout";
 import InstagramEmbed from "react-instagram-embed";
 import YouTube from "react-youtube";
 import { TwitterTweetEmbed } from "react-twitter-embed";
+import { DEFAULT_COVER_IMAGE } from "../../global";
 
 export type Props = {
   title: string;
   dateString: string;
+  coverImage: string;
   slug: string;
   tags: string[];
   author: string;
@@ -33,13 +35,14 @@ const slugToPostContent = (postContents => {
 export default function Post({
   title,
   dateString,
+  coverImage,
   slug,
   tags,
   author,
   description = "",
   source,
-}: Props) {
-  const content = hydrate(source, { components })
+}: Props) {  
+  const content = hydrate(source, { components })  
   return (
     <PostLayout
       title={title}
@@ -48,6 +51,7 @@ export default function Post({
       tags={tags}
       author={author}
       description={description}
+      coverImage={coverImage}
     >
       {content}
     </PostLayout>
@@ -68,11 +72,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { content, data } = matter(source, {
     engines: { yaml: (s) => yaml.load(s, { schema: yaml.JSON_SCHEMA }) as object }
   });
-  const mdxSource = await renderToString(content, { components, scope: data });
+  const mdxSource = await renderToString(content, { components, scope: data });  
   return {
     props: {
       title: data.title,
       dateString: data.date,
+      coverImage: data.coverImage || DEFAULT_COVER_IMAGE,
       slug: data.slug,
       description: "",
       tags: data.tags,
