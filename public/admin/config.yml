@@ -106,11 +106,11 @@ collections:
         name: "title"
         widget: "string"
       - label: "Cover Image"
-        name: "cover image"
+        name: "cover_image"
         widget: "image"
         default: "/images/600x300.png"
         choose_url: true
-        required: false
+        required: false        
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
