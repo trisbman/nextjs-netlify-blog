@@ -107,10 +107,8 @@ collections:
         widget: "string"
       - label: "Cover Image"
         name: "cover_image"
-        widget: "image"
-        default: "/images/600x300.png"
-        choose_url: true
-        required: false        
+        widget: "image"        
+        choose_url: true        
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
