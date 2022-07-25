@@ -5,8 +5,6 @@ tags:
     name: mock
   - slug: style
     name: style
-  - slug: license
-    name: license
   - slug: mdx
     name: mdx
   - slug: markdown
