@@ -109,6 +109,9 @@ export default function PostLayout({
             article {
               flex: 1 0 auto;
             }
+            img {
+              width: 100%;
+            }
             h1 {
               margin: 0 0 0.5rem;
               font-size: 2.25rem;

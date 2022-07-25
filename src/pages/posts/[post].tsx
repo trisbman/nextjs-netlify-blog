@@ -52,8 +52,7 @@ export default function Post({
       author={author}
       description={description}
       coverImage={coverImage}
-    >
-      {content}
+    >      
     </PostLayout>
   )
 }
