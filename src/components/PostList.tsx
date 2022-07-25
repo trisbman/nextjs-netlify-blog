@@ -77,11 +77,13 @@ export default function PostList({ posts, tags, pagination }: Props) {
           .post-list {
             flex: 1 0 auto;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+            flex-wrap: wrap;            
           }
           .post-list li {
             flex-basis: 40%;
+          }
+          .post-list li:nth-of-type(n) {
+            margin-right: 2.5rem;
           }
           .categories {
             display: block;

@@ -11,15 +11,28 @@ export default function PostItem({ post }: Props) {
     <Link href={"/posts/" + post.slug}>
       <a>
         <Date date={parseISO(post.date)} />
-        <img src={post.coverImage} />
+        <div className="image" style={
+          { backgroundImage: `url(${post.coverImage})` }
+        }>
+        </div>
         <h2>{post.title}</h2>
         <style jsx>
           {`
             a {
               color: #222;
               display: inline-block;
+              width: 100%;
             }
-            img {
+            .image  {
+              background-size: cover;      
+              background-position: center;        
+              margin-bottom: 1rem;
+              height: 250px;
+              width: 100%;              
+              overflow: hidden;
+              border-radius: 4px;
+            }
+            img {              
               width: 100%;
             }
             h2 {
