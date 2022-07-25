@@ -9,3 +9,5 @@ tags:
     name: nextjs
   - slug: react
     name: react
+  - slug: bootstrap
+    name: bootstrap
