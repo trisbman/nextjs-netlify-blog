@@ -106,7 +106,7 @@ collections:
         name: "title"
         widget: "string"
       - label: "Cover Image"
-        name: "cover_image"
+        name: "coverImage"
         widget: "image"        
         choose_url: true        
       - label: "Publish Date"
