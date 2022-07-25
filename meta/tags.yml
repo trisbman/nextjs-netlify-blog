@@ -9,13 +9,3 @@ tags:
     name: nextjs
   - slug: react
     name: react
-  - slug: document
-    name: document
-  - slug: mock
-    name: mock
-  - slug: style
-    name: style
-  - slug: mdx
-    name: mdx
-  - slug: markdown
-    name: markdown
