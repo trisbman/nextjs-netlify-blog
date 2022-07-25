@@ -16,7 +16,10 @@ export default function Index() {
             Tristan Budiman<span className="fancy">.</span>
           </h1>
           <span className="handle">@trisbman</span>
-          <h2>Web Developer</h2>          
+          <h2>Web Developer</h2>
+          <a href="/posts">
+            Check out my projects
+          </a>
         </div>
       </div>
       <style jsx>{`

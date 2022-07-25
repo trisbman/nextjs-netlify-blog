@@ -29,6 +29,7 @@ export default function Layout({ children }: Props) {
           main {
             display: flex;
             min-height: 100%;
+            height: 90vh;
           }
           @media (min-width: 769px) {
             .root {
@@ -36,6 +37,7 @@ export default function Layout({ children }: Props) {
               flex: 1 0 auto;
             }
             main {
+              height: unset;
               flex: 1 0 auto;
             }
           }
