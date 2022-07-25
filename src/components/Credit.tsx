@@ -9,7 +9,7 @@ export default function Credit() {
   return (
     <div className={"container"}>
       <div className="credit">
-        <h3>This site made possible by using these tools</h3>
+        <p>This site made possible by using these tools</p>
         <ul>
           {/* NextJS */}
           <li>
