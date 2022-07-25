@@ -11,3 +11,5 @@ tags:
     name: nextjs
   - slug: react
     name: react
+  - slug: nodejs
+    name: nodejs
