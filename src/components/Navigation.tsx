@@ -27,6 +27,17 @@ export default function Navigation() {
               </a>
             </Link>
           </li>
+          <li>
+            <Link href="/credit">
+              <a
+                className={
+                  router.pathname.startsWith("/credit") ? "active" : null
+                }
+              >
+                credit
+              </a>
+            </Link>
+          </li>
         </ul>
         <style jsx>
           {`
