@@ -41,8 +41,8 @@ export default function Post({
   author,
   description = "",
   source,
-}: Props) {  
-  const content = hydrate(source, { components })  
+}: Props) {
+  const content = hydrate(source, { components })
   return (
     <PostLayout
       title={title}
@@ -52,7 +52,8 @@ export default function Post({
       author={author}
       description={description}
       coverImage={coverImage}
-    >      
+    >
+      {content}
     </PostLayout>
   )
 }
@@ -71,7 +72,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { content, data } = matter(source, {
     engines: { yaml: (s) => yaml.load(s, { schema: yaml.JSON_SCHEMA }) as object }
   });
-  const mdxSource = await renderToString(content, { components, scope: data });  
+  const mdxSource = await renderToString(content, { components, scope: data });
   return {
     props: {
       title: data.title,
