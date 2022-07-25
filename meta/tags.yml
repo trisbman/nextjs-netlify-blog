@@ -5,6 +5,8 @@ tags:
     name: css
   - slug: javascript
     name: javascript
+  - slug: bootstrap
+    name: bootstrap
   - slug: nextjs
     name: nextjs
   - slug: react
