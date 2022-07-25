@@ -130,6 +130,7 @@ collections:
         name: "tags"
         widget: list
         summary: "{{fields.tag}}"
+        default: ["html", "css", "javascript"]
         field:
           label: Tag
           name: tag
