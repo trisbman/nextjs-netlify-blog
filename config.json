@@ -11,9 +11,10 @@
     },
     {
       "keyword": "React"
-    }
+    },
+    "Portfolio"
   ],
   "posts_per_page": 4,
-  "twitter_account": "trisbman",
+  "twitter_account": "tristhedev",
   "github_account": "trisbman"
 }
