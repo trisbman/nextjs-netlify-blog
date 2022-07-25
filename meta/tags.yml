@@ -15,3 +15,9 @@ tags:
     name: nodejs
   - slug: web-component
     name: web component
+  - slug: jquery
+    name: jQuery
+  - slug: typescript
+    name: typescript
+  - slug: scss
+    name: scss
