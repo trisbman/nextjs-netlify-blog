@@ -21,3 +21,5 @@ tags:
     name: typescript
   - slug: scss
     name: scss
+  - slug: angular
+    name: angular
