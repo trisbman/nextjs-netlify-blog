@@ -23,3 +23,5 @@ tags:
     name: scss
   - slug: angular
     name: angular
+  - slug: responsive
+    name: responsive
