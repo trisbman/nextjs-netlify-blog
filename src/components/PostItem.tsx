@@ -10,12 +10,12 @@ export default function PostItem({ post }: Props) {
   return (
     <Link href={"/posts/" + post.slug}>
       <a>
-        <Date date={parseISO(post.date)} />
         <div className="image" style={
           { backgroundImage: `url(${post.coverImage})` }
         }>
         </div>
         <h2>{post.title}</h2>
+        <Date date={parseISO(post.date)} />
         <style jsx>
           {`
             a {

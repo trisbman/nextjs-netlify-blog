@@ -9,9 +9,6 @@ export default function Date({ date }: Props) {
       <span>{format(date, "LLLL d, yyyy")}</span>
       <style jsx>
         {`
-          time {
-            display: none
-          }
           span {
             color: #9b9b9b;
           }
