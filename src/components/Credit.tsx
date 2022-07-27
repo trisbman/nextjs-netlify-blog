@@ -42,20 +42,10 @@ export default function Credit() {
         </ul>
       </div>
       <style jsx>{`
-        .container {
-          display: flex;
-          margin: 0 auto;
-          max-width: 1200px;
-          width: 100%;
-          height: 100%;
-          padding: 0 1.5rem;          
-        }
         .credit {
           display: flex;
-          flex-direction: column;
+          flex-direction: column;          
           flex: 1 1 auto;
-        }
-        h3 {          
         }
         ul {
           padding: 0;
@@ -63,9 +53,6 @@ export default function Credit() {
           flex-direction: row;
           flex-wrap: wrap;             
           align-items: center;          
-        }
-        li {                    
-          list-style: none;          
         }
       `}</style>
     </div>

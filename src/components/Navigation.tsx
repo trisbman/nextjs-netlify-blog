@@ -28,6 +28,17 @@ export default function Navigation() {
             </Link>
           </li>
           <li>
+            <Link href="/contact">
+              <a
+                className={
+                  router.pathname.startsWith("/contact") ? "active" : null
+                }
+              >
+                contact
+              </a>
+            </Link>
+          </li>
+          <li>
             <Link href="/credit">
               <a
                 className={
@@ -42,7 +53,7 @@ export default function Navigation() {
         <style jsx>
           {`
             .container {
-              width: 0;
+              width: 0;              
             }
             ul {
               opacity: 0;

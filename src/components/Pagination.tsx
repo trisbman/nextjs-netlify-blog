@@ -43,6 +43,7 @@ export default function Pagination({ current, pages, link }: Props) {
         @media (max-width: 768px) {
           ul {
             padding: 1rem;
+            padding-left: 0;
           }
         }
       `}</style>

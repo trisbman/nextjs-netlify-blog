@@ -43,6 +43,26 @@ export default function Layout({ children }: Props) {
           }
         `}
       </style>
+      <style jsx global>{`
+        .container {
+          display: flex;
+          max-width: 1200px;
+          width: 100%;
+          height: 100%;
+          padding: 0 1.5rem;    
+        }
+        nav .container {
+          padding: 0;
+        }
+        li {                    
+          list-style: none;          
+        }
+        @media (min-width: 769px) {
+          .container {         
+            margin: 0 auto;
+          }
+        }
+      `}</style>
     </div>
   );
 }
