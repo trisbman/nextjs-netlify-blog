@@ -119,8 +119,7 @@ export default function Index() {
         bottom: 0px;
         background: var(--color);
         transition: transform var(--line-arrow-transition-duration) var(--line-arrow-easing);
-        transition-delay: var(--line-arrow-transition-delay);
-        z-index: 2;
+        transition-delay: var(--line-arrow-transition-delay);        
       }
       a span::before {
         width: var(--line-arrow-width);
